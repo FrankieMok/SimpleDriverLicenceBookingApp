@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--    <string name="app_name">ISC7424S12020_A1_1518687</string>-->
+    <string name="app_name">NZTA Booking</string>
+    <string name="title_activity_booking_scrolling">BookingScrollingActivity</string>
+    <string name="textView"> Drivers Licence Test Booking </string>
+    <string name="textView2"> Appointment Summary </string>
+    <string name="textView5"> Please select Date and Time </string>
+    <string name="textView7"> Driving Licence: </string>
+    <string name="nzta_info"> NZ Transport Agency "\n" https://www.nzta.govt.nz</string>
+
+    <string name="menu_TimeSlot"> •	Monday to Friday "\n" • 09:00 ~ 17:00 "\n" • Each time slot is 1 hour long</string>
+    <string name="menu_Limitation"> • A time slot can be booked by 10 person at the same time "\n"
+                                    • One person can only book one time slot per day</string>
+
+    <string name="action_about">About</string>
+
+    <string name="licIsEmpty" tools:ignore="StringEscaping">Field can\'t be empty!</string>
+    <string name="licIsTooLong">License too long!!</string>
+    <string name="bookingConfirm">Confirm Your Booking Activity</string>
+
+
+
+</resources>

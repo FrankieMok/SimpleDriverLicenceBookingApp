@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#E6FFCA</item>
+    </style>
+
+    <style name="AppThemeMain" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#E6FFCA</item>
+    </style>
+
+        <!-- Customize Text here. -->
+    <style name="textViewStyleNZTA">
+        <item name="android:fontFamily">@font/bitterregular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#0082FF</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+        <!-- Customize Button here. -->
+    <style name="textViewStyleNZTA.ButtonViewNZTA">
+        <item name="android:background">#0082FF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo</item>
+    </style>
+
+    <style name="textViewStyleNZTA.RadioButtonNZTA">
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">#0082FF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo</item>
+    </style>
+
+    <!-- Customize For No actionBar here. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Theme for Dialog -->
+    <style name="CustomDialog">
+        <item name="android:fontFamily">@font/bitteritalic</item>
+    </style>
+
+    <!-- Theme for Dialog Title -->
+    <style name="CustomDialog.Title">
+        <item name="android:gravity">center</item>
+<!--        <item name="android:textColor">@color/colorPrimary</item>-->
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!-- Theme for Dialog Message -->
+    <style name="CustomDialog.Message">
+        <item name="android:textSize">@dimen/text_message_size</item>
+        <item name="android:fontFamily">@font/bitterbold</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textColor">#0082FF</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FFCA"
+    android:id="@+id/booking"
+    tools:context=".BookingActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nzta_symbol" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textViewStyleNZTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Date:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupTime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/rad1Btn1"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <RadioButton
+            android:id="@+id/rad1Btn2"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <RadioButton
+            android:id="@+id/rad1Btn3"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+
+        <RadioButton
+            android:id="@+id/rad1Btn4"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thursday" />
+
+        <RadioButton
+            android:id="@+id/rad1Btn5"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friday" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTime"
+        android:layout_width="140dp"
+        android:layout_height="258dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupDate"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/rad2Btn1"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09:00 - 10:00" />
+
+        <RadioButton
+            android:id="@+id/rad2Btn2"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10:00 - 11:00" />
+
+        <RadioButton
+            android:id="@+id/rad2Btn3"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11:00 - 12:00" />
+
+        <RadioButton
+            android:id="@+id/rad2Btn4"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00 - 13:00" />
+
+        <RadioButton
+            android:id="@+id/rad2Btn5"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13:00 - 14:00" />
+
+        <RadioButton
+            android:id="@+id/rad2Btn6"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14:00 - 15:00" />
+
+        <RadioButton
+            android:id="@+id/rad2Btn7"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15:00 - 16:00" />
+
+        <RadioButton
+            android:id="@+id/rad2Btn8"
+            style="@style/textViewStyleNZTA.RadioButtonNZTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16:00 - 17:00" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/textViewStyleNZTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:text="Timeslots:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licTextView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/textViewStyleNZTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/licTextView"
+        style="@style/textViewStyleNZTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DM123456"
+        android:textColor="#FB921D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/textViewStyleNZTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textView7"
+        android:textColor="#FB921D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        style="@style/textViewStyleNZTA.ButtonViewNZTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_normal"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupTime" />
+</androidx.constraintlayout.widget.ConstraintLayout>

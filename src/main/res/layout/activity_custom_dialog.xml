@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FFCA">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_dialog"
+        style="@style/CustomDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            app:lottie_loop="true"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginEnd="70dp"
+            app:srcCompat="@drawable/nzta_symbol"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="370dp" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            style="@style/CustomDialog.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:text="@string/bookingConfirm"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/dayTextView_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_title"
+            android:text="Day"
+            style="@style/CustomDialog.Message"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/timeSlotTextView_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dayTextView_message"
+            android:text="Time"
+            style="@style/CustomDialog.Message"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeSlotTextView_message"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:weightSum="1.0">
+
+
+
+            <Button
+                android:id="@+id/button_negative"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@drawable/button_small"
+                android:text="Cancel"
+                android:layout_marginLeft="50dp" />
+
+            <Button
+                android:id="@+id/button_positive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@drawable/button_small"
+                android:text="Submit"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

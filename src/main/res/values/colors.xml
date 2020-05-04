@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC100</color>
+    <color name="colorPrimaryDark">#82BB00</color>
+    <color name="colorAccent">#D8FB88</color>
+
+    <color name="custom_dialog_background">@android:color/white</color>
+
+<!--    <color name="custom_dialog_title_text_color">@android:color/primary_text_light</color>-->
+<!--    <color name="custom_dialog_message_text_color">@android:color/secondary_text_light</color>-->
+
+<!--    <color name="custom_dialog_positive_button_text_color">?android:colorAccent</color>-->
+<!--    <color name="custom_dialog_negative_button_text_color">#1E88E5</color>-->
+
+<!--    <color name="custom_dialog_positive_button_color">?android:colorAccent</color>-->
+
+</resources>
+

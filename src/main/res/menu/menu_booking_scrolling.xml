@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item1"
+        android:icon="@drawable/nzta_logo_p"
+        android:title="Item 1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/menuTimeSlot"
+                android:title="Time Slot"/>
+
+            <item android:id="@+id/menuLimit"
+                android:title="Limitation"/>
+        </menu>
+    </item>
+</menu>
